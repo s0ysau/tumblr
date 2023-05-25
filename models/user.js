@@ -58,4 +58,8 @@ userSchema.pre('save', async function (next) {
   return next()
 })
 
-module.exports = model('User', userSchema)
+const User = model('User', userSchema)
+
+module.exports = User
+
+// module.exports = model('User', userSchema)
