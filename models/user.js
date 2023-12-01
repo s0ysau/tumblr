@@ -4,7 +4,7 @@ const { Schema, model } = require('mongoose')
 const bcrypt = require('bcrypt')
 
 // SALT_ROUNDS 
-const SALT_ROUNDS = 6
+const SALT_ROUNDS = 10
 
 const userSchema = new Schema ({
   profilePicture: {type: String},
@@ -18,7 +18,7 @@ const userSchema = new Schema ({
   password: {
     type: String,
     trim: true,
-    minLength: 6,
+    minLength: 10,
     required: true,
   },
   email: {

@@ -8,8 +8,6 @@ export default function LoginPage(props){
         <main className={styles.loginPageContainer}>
             <AuthGreet />
             <LoginForm setUser={props.setUser}></LoginForm>
-            Sign in with Apple<br/>
-            Sign in with Google
         </main>
     )
 }
